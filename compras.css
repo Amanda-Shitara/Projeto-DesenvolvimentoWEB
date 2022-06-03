@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(58, 58, 58, 0.992);
+}
+#headerSuperior {
+    padding: 25px;
+}
+#headerInferior {
+    display: flex;
+    background-color: plum;
+    padding: 40px;
+    justify-content: center;
+}
+.compraIngresso {
+    display: flex;
+    justify-content: space-between;
+}
+.quantidade {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    align-items: center;
+}
+[type="number"] {
+    height: min-content;
+    width: 100px;
+    border: none;
+}
+[type="button"] {
+    height: min-content;
+    border: none;
+    background-color: white;
+}
+section{
+    background-color: ghostwhite;
+}
+.valor {
+    margin:10px;
+}
+#verCarrinho {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    background-color: plum;
+    border: none;
+    background-size: 200%;
+    margin-bottom: 32px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 12px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: ghostwhite;
+    height: 100px;    
+}

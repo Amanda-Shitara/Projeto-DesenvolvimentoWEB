@@ -3,36 +3,67 @@
     <head>
         <meta charset="uft-8"/>
         <title>Comprar ingressos</title>
+        <link href="comprar.css" rel="stylesheet" type="text/css" />
         <script src="comprar.js"></script>
 
     </head>
     <body>
-        <div>
-            Ingresso exposição 1: <b>R$ 50,00</b>
-            <br>
-            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd1">
-            <button type="button" id="adicionarIngresso1" id="ingresso1" onclick="AdicionarCarrinho('Ingresso Exposição 1',document.getElementById('qtd1').value, '50.00', 1)">
-            Comprar</button>
-        </div>
-    
-        <div>
-            <br>
-            Ingresso exposição 2: <b>R$ 55,00</b>
-            <br>
-            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd2">
-            <button type="button" id="adicionarIngresso2" id="ingresso2" onclick="AdicionarCarrinho('Ingresso Exposição 2',document.getElementById('qtd2').value, '55.00', 2)">
-            Comprar</button>
-        </div>
-    
-        <div>
-            <br>
-            Ingresso exposição 3: <b>R$ 80,00</b>
-            <br>
-            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd3">
-            <button type="button" id="adicionarIngresso3" id="ingresso3" onclick="AdicionarCarrinho('Ingresso Exposição 3',document.getElementById('qtd3').value, '80.00', 3)">
-            Comprar</button>
-        </div>
+        <header id="cabecalho">
+            <div id="headerSuperior">
+                <p>logo</p>
+            </div>
+            <div id="headerInferior">
+                <h1>Selecione os ingressos</h1>
+            </div>
+        </header>
+        <section>
+            <div class="compraIngresso">
+                <div class="valor">
+                    <p>Ingresso exposição 1</p> 
+                    <p><b>R$ 50,00</b></p>
+                </div>
+                <br>
+                <div class="quantidade">
+                    <p>Quantidade: </p> <input type="number" value="1" min="1" max="10" id="qtd1">
+                    <button type="button" id="adicionarIngresso1" id="ingresso1" onclick="AdicionarCarrinho('Ingresso Exposição 1',document.getElementById('qtd1').value, '50.00', 1)">
+                    Comprar</button>
+                </div>
+            </div>
+            <hr>
+        
+            <div class="compraIngresso">
+                <div class="valor">
+                    <p>Ingresso exposição 2</p> 
+                    <p><b>R$ 55,00</b></p>
+                </div>
+                <br>
+                <div class="quantidade">
+                    <p>Quantidade: </p> <input type="number" value="1" min="1" max="10" id="qtd2">
+                    <button type="button" id="adicionarIngresso2" id="ingresso2" onclick="AdicionarCarrinho('Ingresso Exposição 2',document.getElementById('qtd2').value, '55.00', 2)">
+                    Comprar</button>
+                </div>
+            </div>
+            <hr>
+        
+            <div class="compraIngresso">
+                <div class="valor">
+                    <p>Ingresso exposição 3</p> 
+                    <p><b>R$ 80,00</b></p>
+                </div>
+                <br>
+                <div class="quantidade">
+                    <p>Quantidade: </p> <input type="number" value="1" min="1" max="10" id="qtd3">
+                    <button type="button" id="adicionarIngresso3" id="ingresso3" onclick="AdicionarCarrinho('Ingresso Exposição 3',document.getElementById('qtd3').value, '80.00', 3)">
+                    Comprar</button>
+                </div>
+            </div>
+            <hr>
+        </section>
 
-        <p><a href="carrinho.html"> Carrinho </a></p>
+        <footer>
+            <div id="divfooter">
+                <button id="verCarrinho" onclick="window.location.href='carrinho.html'">Visualizar carrinho</button>
+            </div>
+        </footer>
     </body>
 </html>
